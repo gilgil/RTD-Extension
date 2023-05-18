@@ -26,7 +26,7 @@ Please make sure, not to rename the OXT file when downloading and before install
 
 3. Next, data needs to be sent using a socket to port 13000.
    If you wish to manually test it, open up a telnet in a terminal: `telnet localhost 13000`.
-   In the telnet, write '<key|example_data>' and then press '<Enter>'.
+   In the telnet, write '<key|example_data>' and then press ENTER.
    The cell with the formula `=RTD("key")` (from section 1) will now show "example_data" instead of "None"
 
 ### Build:

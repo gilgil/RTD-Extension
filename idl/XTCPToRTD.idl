@@ -1,0 +1,10 @@
+#include <com/sun/star/sheet/XVolatileResult.idl>
+
+module org { module tcptortd { module getinfo {
+
+    interface TCPToRTD
+    {
+      com::sun::star::sheet::XVolatileResult RTD( [in] string RTDKey);
+    };
+
+}; }; };

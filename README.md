@@ -44,4 +44,4 @@ cd ~/RTD-Extension/
 ./compile.sh
 
 ### Tested with:
-- Ubuntu 18.04.5 / LibreOffice Calc 7.4.2.3 / Python 3.8.14
+- Ubuntu 18.04.5 / LibreOffice Calc 7.5.3.2 / Python 2.7.17

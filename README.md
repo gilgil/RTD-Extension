@@ -1,4 +1,4 @@
-# TCPToRTD-Extension
+# RTD-Extension
 
 Version 1.0.0 is here
 

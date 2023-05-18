@@ -22,7 +22,7 @@ Please make sure, not to rename the OXT file when downloading and before install
 
 1. Getting data should be as simple as having this in a cell: `=RTD("key")`
 
-2. Now, in different cell, type `=RTD("__start")` and a TCP listener will be started waiting for incoming data.
+2. Now, in a different cell, type `=RTD("__start")` and a TCP listener will be started waiting for incoming data.
 
 3. Next, data needs to be sent using a socket to port 13000.
    If you wish to manually test it, open up a telnet in a terminal: `telnet localhost 13000`.

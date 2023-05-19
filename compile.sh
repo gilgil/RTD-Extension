@@ -29,13 +29,14 @@ mkdir "${PWD}"/build/META-INF/
 
 # Compile the binaries
 
-echo "Calling idlc..."
-idlc -I/usr/lib/libreoffice/sdk/idl -w -verbose "${PWD}"/idl/XTCPToRTD.idl
+echo "Calling unoidl-write..."
 
-echo "Calling regmerge..."
-regmerge -v "${PWD}"/build/XTCPToRTD.rdb UCR "${PWD}"/idl/XTCPToRTD.urd
+unoidl-write "${UNO_PATH}"/types.rdb "${UNO_PATH}"/types/offapi.rdb "${PWD}"/idl/XTCPToRTD.idl "${PWD}"/build/XTCPToRTD.rdb
 
-rm "${PWD}"/idl/XTCPToRTD.urd
+#echo "Calling regmerge..."
+#regmerge -v "${PWD}"/build/XTCPToRTD.rdb UCR "${PWD}"/idl/XTCPToRTD.urd
+
+#rm "${PWD}"/idl/XTCPToRTD.urd
 
 echo "Generating meta files..."
 python3 "${PWD}"/src/generate_metainfo.py
